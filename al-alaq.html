@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Sambung Ayat Surat Al-Alaq</title>
+    <link rel="stylesheet" href="assets/style1.css">
+</head>
+<body>
+    <header>
+        <h1 class="playerName">
+            Selamat bermain <strong id="playerName"></strong> !!!
+        </h1>
+</header>
+<p class="level">Level 19</p1>
+    <p>Sambungkan setiap ayat Surat Al-Alaq dengan ayat selanjutnya yang tepat.</p>
+    <div class="result-container">
+        <p id="result"></P>
+            <a href="at-tin.html"><input type="button" value="LEVEL 20" class="animatedButton"></a>
+            <br>
+            <a href="surat.html"><input type="button" value="HOME" class="animatedButton"></a>
+            <a href="index.html"><input type="button" value="CLOSE" class="animatedButton"></a>
+        </div>    
+    <div id="game-container">
+        <div id="question-container">
+            <p><img id="current-question-img" class="question-img" src=""></p>
+
+        </div>
+        <form id="answer-form">
+            <input type="radio" name="answer" id="answer1" class="answer-option" onclick="displayAnswer('answer1')">
+            <label for="answer1" id="answer1-label">
+                <img src="images19/gambar7.png" alt="Gambar 2">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer2" class="answer-option" onclick="displayAnswer('answer2')">
+            <label for="answer2" id="answer2-label">
+                <img src="images19/gambar4.png" alt="Gambar 3">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer3" class="answer-option" onclick="displayAnswer('answer3')">
+            <label for="answer3" id="answer3-label">
+                <img src="images19/gambar3.png" alt="Gambar 4">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer4" class="answer-option" onclick="displayAnswer('answer4')">
+            <label for="answer4" id="answer4-label">
+                <img src="images19/gambar6.png" alt="Gambar 5">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer5" class="answer-option" onclick="displayAnswer('answer5')">
+            <label for="answer5" id="answer5-label">
+                <img src="images19/gambar5.png" alt="Gambar 6">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer6" class="answer-option" onclick="displayAnswer('answer6')">
+            <label for="answer6" id="answer6-label">
+                <img src="images19/gambar2.png" alt="Gambar 7">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer7" class="answer-option" onclick="displayAnswer('answer7')">
+            <label for="answer7" id="answer7-label">
+                <img src="images19/gambar8.png" alt="Gambar 8">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer8" class="answer-option" onclick="displayAnswer('answer8')">
+            <label for="answer8" id="answer8-label">
+                <img src="images19/gambar10.png" alt="Gambar 9">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer9" class="answer-option" onclick="displayAnswer('answer9')">
+            <label for="answer9" id="answer9-label">
+                <img src="images19/gambar9.png" alt="Gambar 10">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer10" class="answer-option" onclick="displayAnswer('answer10')">
+            <label for="answer10" id="answer10-label">
+                <img src="images19/gambar11.png" alt="Gambar 11">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer11" class="answer-option" onclick="displayAnswer('answer11')">
+            <label for="answer11" id="answer11-label">
+                <img src="images19/gambar12.png" alt="Gambar 12">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer12" class="answer-option" onclick="displayAnswer('answer12')">
+            <label for="answer12" id="answer12-label">
+                <img src="images19/gambar13.png" alt="Gambar 13">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer13" class="answer-option" onclick="displayAnswer('answer13')">
+            <label for="answer13" id="answer13-label">
+                <img src="images19/gambar14.png" alt="Gambar 14">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer14" class="answer-option" onclick="displayAnswer('answer14')">
+            <label for="answer14" id="answer14-label">
+                <img src="images19/gambar15.png" alt="Gambar 15">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer15" class="answer-option" onclick="displayAnswer('answer15')">
+            <label for="answer15" id="answer15-label">
+                <img src="images19/gambar16.png" alt="Gambar 16">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer16" class="answer-option" onclick="displayAnswer('answer16')">
+            <label for="answer16" id="answer16-label">
+                <img src="images19/gambar17.png" alt="Gambar 17">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer17" class="answer-option" onclick="displayAnswer('answer17')">
+            <label for="answer17" id="answer17-label">
+                <img src="images19/gambar18.png" alt="Gambar 18">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer18" class="answer-option" onclick="displayAnswer('answer18')">
+            <label for="answer18" id="answer18-label">
+                <img src="images19/gambar19.png" alt="Gambar 19">
+            </label>
+        </form>
+        <button onclick="nextQuestion()">Next</button>
+        <button id="reset-button">Reset</button>
+        <p id="answer-status"></p>
+        <center><a href="surat.html">
+            <img src="home.jpg" alt="Tombol Halaman Utama" style= "width: 40px; height: 40px;" class="animatedButton">
+          </a></center>
+          <center><audio src="music/096 Surat Al-Alaq [eshaardhie.blogspot.com].mp3" controls autoplay>
+            Your browser does not support the audio tag.
+          </audio></center> 
+    </div>
+    <img src = "assets/4.png"class= "img1" style="height: 200px; width: 200px;">
+
+    <script src="assets/script19.js"></script>
+</body>
+</html>

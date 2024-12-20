@@ -1,0 +1,68 @@
+@media screen and (max-width: 576px) {
+  .img-thumbnail {
+    width: 150px;
+  }
+  .nama h4 {
+    font-size: 20px;
+  }
+  
+  .toggleSlide {
+    transform: translateX(-85px);
+  }
+  .initial {
+    transform: translateX(-15px);
+  }
+  .buttonToggle {
+    display: inline;
+    margin-top: 8px;
+    padding: 0px 8px;
+  }
+  .nav-item-item {
+    display: none;
+  }
+  .offcanvas-body ul {
+    list-style-type: none;
+  }
+  .offcanvas-body a {
+    color: black;
+  }
+
+  .all-body-cover {
+    margin-top: 200px;
+  }
+  .firstContainer {
+    margin-top: -75px;
+  }
+.waves {
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+  .wavesss {
+    margin-bottom: -25px;
+  }
+  .botWaves {
+    margin-top: -5px;
+  }
+  .wavesContact {
+    margin-bottom: -5px;
+  }
+  .subNameHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 0px;
+  }
+
+  .fivethContainer {
+    margin-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+}

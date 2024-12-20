@@ -1,0 +1,77 @@
+input[type="button"] {
+    background-color: #7e7405;
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;               
+}
+
+input[type="button1"] {
+    background-color: #ffffff;
+    color: rgb(255, 143, 5);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; 
+    text-align: center;              
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  padding: 5px;
+  align-items: center;
+  height: 40px;
+  font-size: medium;
+  font-family: 'Gill Sans MT';
+}
+
+p {
+    text-align: center;
+    margin-top: 60px;
+    font-size: x-large;
+    font-family: 'Gill Sans MT';
+    color: rgb(253, 253, 253);
+}
+body{
+    background-image: url('hijau.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}                
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-container a {
+    margin: 10px;
+    animation: buttonAnimation 2s ease-in-out infinite alternate;
+}
+
+input[type="button1"]{
+  animation: buttonAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes buttonAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

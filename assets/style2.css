@@ -1,0 +1,210 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #ee7752, #008000, #00ff00, #23d5ab);
+  font-family: Fredoka;
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000000;
+  font-size: 16px;
+  font-family:'Gill Sans MT';
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  color: #000000;
+  font-size: 16px;
+  font-family:'Gill Sans MT';
+  text-align: center;
+  font-weight: bold;
+}
+
+.quran {
+  width: 50px; 
+  height: 50px;
+}
+
+  .img-container {
+    display: flex;
+    float: right;
+  }
+  
+  .img-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  button {
+    background-color: #7e7405;
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; 
+    position: relative;
+    z-index: 1;
+}  
+
+  .game-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url("Quran.png");
+    background-size: contain; /* Menggunakan contain sebagai alternatif */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-position: center; /* Posisikan gambar ke tengah */
+    margin: 120 auto;
+    max-width: 400px;
+    position: relative;
+  }
+
+  .background-image {
+    background-image: url("Quran.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(20px);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .text-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .text-container h1 {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .text-container p {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  padding: 5px;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  height: 40;
+}
+
+.right-content {
+  flex: 1;
+  text-align: right;
+}
+
+.center-content {
+  flex: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+footer input[type="button"] {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.moving-icon {
+  animation: iconAnimation 2s ease-in-out infinite;
+}
+
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+input[type="button"] {
+  animation: buttonAnimation 2s ease-in-out infinite;
+}
+
+button{
+  animation: buttonAnimation 2s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  padding: 5px;
+  align-items: center;
+  gap: 10px;
+  height: 40;
+}

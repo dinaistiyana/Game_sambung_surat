@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="assets/style.css" />
+        <script>
+            function checkProgress() {
+                var level = localStorage.getItem("level");
+                if (level === null) {
+                    level = 1; // Starting level if no progress is saved
+                } else {
+                    level = parseInt(level);
+                }
+                
+                for (var i = 1; i <= level; i++) {
+                    var button = document.getElementById("level" + i);
+                    button.disabled = false;
+                }
+                
+                for (var j = level + 1; j <= 22; j++) {
+                    var button = document.getElementById("level" + j);
+                    if (button) {
+                        button.disabled = true;
+                    }
+                }
+            }
+            
+            function completeLevel(level) {
+                localStorage.setItem("level", level + 1);
+                location.reload(); // Reload the page to reflect the changes
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+        <h1 class="playerName">
+            Selamat bermain <strong id="playerName"></strong> !!!
+        </h1>
+    </header>
+        <p>Sambung ayat surat An-Nas sampai Ad-Dhuha</p>
+                <div class="button-container">
+            <a href="an-nas.html"><input type="button" value="Level 1" id="level1" class="level-button" data-level="1"></a>
+            <a href="al-falaq.html"><input type="button" value="Level 2" id="level2" class="level-button" data-level="2" disabled></a>
+            <a href="al-ikhlas.html"><input type="button" value="Level 3" id="level3" class="level-button" data-level="3" disabled></a>
+            <a href="al-lahab.html"><input type="button" value="Level 4" id="level4" class="level-button" data-level="4" disabled></a>
+            <a href="an-nashr.html"><input type="button" value="Level 5" id="level5" class="level-button" data-level="5"  disabled></a>
+            <a href="al-kafirun.html"><input type="button" value="Level 6" id="level6" class="level-button" data-level="6" disabled></a>
+            <a href="al-kautsar.html"><input type="button" value="Level 7" id="level7" class="level-button" data-level="7" disabled></a>
+            <a href="al-ma'un.html"><input type="button" value="Level 8" id="level8" class="level-button" data-level="8" disabled></a>
+            <a href="al-quraisy.html"><input type="button" value="Level 9" id="level9" class="level-button" data-level="9" disabled></a>
+            <a href="al-fiil.html"><input type="button" value="Level 10" id="level10" class="level-button" data-level="10" disabled></a>
+            <a href="al-humazah.html"><input type="button" value="Level 11" id="level11" class="level-button" data-level="11" disabled></a>
+            <a href="al-ashr.html"><input type="button" value="Level 12" id="level12" class="level-button" data-level="12" disabled></a>
+            <a href="at-takatsur.html"><input type="button" value="Level 13" id="level13" class="level-button" data-level="13" disabled></a>
+            <a href="al-qoriah.html"><input type="button" value="Level 14" id="level14" class="level-button" data-level="14" disabled></a>
+            <a href="al-adiyat.html"><input type="button" value="Level 15" id="level15" class="level-button" data-level="15" disabled></a> 
+            <a href="al-zalzalah.html"><input type="button" value="Level 16" id="level16" class="level-button" data-level="16" disabled></a>
+            <a href="al-bayyinah.html"><input type="button" value="Level 17" id="level17" class="level-button" data-level="17" disabled></a>
+            <a href="al-qadr.html"><input type="button" value="Level 18" id="level18" class="level-button" data-level="18" disabled></a>
+            <a href="al-alaq.html"><input type="button" value="Level 19" id="level19" class="level-button" data-level="19" disabled></a>
+            <a href="at-tin.html"><input type="button" value="Level 20" id="level20" class="level-button" data-level="20" disabled></a>
+            <a href="al-insyirah.html"><input type="button" value="Level 21" id="level21" class="level-button" data-level="21" disabled></a>
+            <a href="ad-dhuha.html"><input type="button" value="Level 22" disabled></a>
+                </div>
+        <center>
+            <div class="keluar">
+            <a href="index.html"><input type="button1" value="CLOSE"></a>
+        </div>
+        <br>
+            <audio src="music/078 Surat An-Naba [eshaardhie.blogspot.com].mp3" controls autoplay>
+            Your browser does not support the audio tag.
+            </audio>
+        </center>
+        <script>
+        var playerNameElement = document.getElementById("playerName");
+        var playerName = localStorage.getItem("playerName");
+        playerNameElement.textContent = playerName;
+        </script>
+        <script>
+            checkProgress();
+        </script>
+        <script>
+            var levelButtons = document.getElementsByClassName("level-button");
+            for (var i = 0; i < levelButtons.length; i++) {
+                levelButtons[i].addEventListener("click", function() {
+                    var level = parseInt(this.dataset.level);
+                    completeLevel(level);
+                });
+            }        
+        </script>
+   </body>
+</html>

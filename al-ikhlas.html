@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Sambung Ayat Surat Al-Ikhlas</title>
+    <link rel="stylesheet" href="assets/style1.css">
+</head>
+<body>
+    <header>
+        <h1 class="playerName">
+            Selamat bermain <strong id="playerName"></strong> !!!
+        </h1>
+    </header>
+    <p class="level">Level 3</p1>
+    <p>Sambungkan setiap ayat Surat Al-Ikhlas dengan ayat selanjutnya yang tepat.</p>
+    <div class="result-container">
+        <p id="result"></P>
+            <a href="al-lahab.html"><input type="button" value="LEVEL 4" class="animatedButton"></a>
+            <br>
+            <a href="surat.html"><input type="button" value="HOME" class="animatedButton"></a>
+            <a href="index.html"><input type="button" value="CLOSE" class="animatedButton"></a>
+        </div>    
+    <div id="game-container">
+        <div id="question-container">
+            <p><img id="current-question-img" class="question-img" src=""></p>
+
+        </div>
+        <form id="answer-form">
+            <input type="radio" name="answer" id="answer1" class="answer-option" onclick="displayAnswer('answer1')">
+            <label for="answer1" id="answer1-label">
+                <img src="images3/gambar4.png" alt="Gambar 2">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer2" class="answer-option" onclick="displayAnswer('answer2')">
+            <label for="answer2" id="answer2-label">
+                <img src="images3/gambar3.png" alt="Gambar 3">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer3" class="answer-option" onclick="displayAnswer('answer3')">
+            <label for="answer3" id="answer3-label">
+                <img src="images3/gambar2.png" alt="Gambar 4">
+            </label>
+        </form>
+        <button onclick="nextQuestion()">Next</button>
+        <button id="reset-button">Reset</button>
+        <p id="answer-status"></p>
+        <center><a href="surat.html">
+            <img src="home.jpg" alt="Tombol Halaman Utama" style= "width: 40px; height: 40px;" class="animatedButton">
+          </a></center>
+          <center><audio src="music/112 Surat Al-Ikhlash [eshaardhie.blogspot.com].mp3" controls autoplay>
+            Your browser does not support the audio tag.
+          </audio></center> 
+    </div>
+    <img src = "assets/6.png"class= "img" style="height: 260px; width: 260px;">
+
+    <script src="assets/script3.js"></script>
+</body>
+</html>

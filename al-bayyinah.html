@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Sambung Ayat Surat Al-Bayyinah</title>
+    <link rel="stylesheet" href="assets/style1.css">
+</head>
+<body>
+    <header>
+        <h1 class="playerName">
+            Selamat bermain <strong id="playerName"></strong> !!!
+        </h1>
+    </header>
+    <p class="level">Level 17</p1>
+    <p>Sambungkan setiap ayat Surat Al-Bayyinah dengan ayat selanjutnya yang tepat.</p>
+    <div class="result-container">
+        <a href="al-qadr.html"><input type="button" value="LEVEL 18" class="animatedButton"></a>
+            <br>
+            <a href="surat.html"><input type="button" value="HOME" class="animatedButton"></a>
+            <a href="index.html"><input type="button" value="CLOSE" class="animatedButton"></a>
+        <p id="result"></P>
+        </div>    
+    <div id="game-container">
+        <div id="question-container">
+            <p><img id="current-question-img" class="question-img" src=""></p>
+
+        </div>
+        <form id="answer-form">
+            <input type="radio" name="answer" id="answer1" class="answer-option" onclick="displayAnswer('answer1')">
+            <label for="answer1" id="answer1-label">
+                <img src="images17/gambar3.png" alt="Gambar 2">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer2" class="answer-option" onclick="displayAnswer('answer2')">
+            <label for="answer2" id="answer2-label">
+                <img src="images17/gambar4.png" alt="Gambar 3">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer3" class="answer-option" onclick="displayAnswer('answer3')">
+            <label for="answer3" id="answer3-label">
+                <img src="images17/gambar2.png" alt="Gambar 4">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer4" class="answer-option" onclick="displayAnswer('answer4')">
+            <label for="answer4" id="answer4-label">
+                <img src="images17/gambar5.png" alt="Gambar 5" style="width: 100%;">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer5" class="answer-option" onclick="displayAnswer('answer5')">
+            <label for="answer5" id="answer5-label">
+                <img src="images17/gambar6.png" alt="Gambar 6" style="width: 100%;">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer6" class="answer-option" onclick="displayAnswer('answer6')">
+            <label for="answer6" id="answer6-label">
+                <img src="images17/gambar8.png" alt="Gambar 7" style="width: 100%;">
+            </label>
+            <br>
+            <input type="radio" name="answer" id="answer7" class="answer-option" onclick="displayAnswer('answer7')">
+            <label for="answer7" id="answer7-label">
+                <img src="images17/gambar7.png" alt="Gambar 8">
+            </label>
+        </form>
+        <button onclick="nextQuestion()">Next</button>
+        <button id="reset-button">Reset</button>
+        <p id="answer-status"></p>
+        <center><a href="surat.html">
+            <img src="home.jpg" alt="Tombol Halaman Utama" style= "width: 40px; height: 40px;" class="animatedButton">
+          </a></center>
+          <center><audio src="music/098 Surat Al-Bayyinah [eshaardhie.blogspot.com].mp3" controls autoplay>
+            Your browser does not support the audio tag.
+          </audio></center>
+    </div>
+    <img src = "assets/10.png"class= "img" style="height: 260px; width: 260px;">
+
+    <script src="assets/script17.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>QuranVerseMerge Game</title>
+        <link rel="stylesheet" href="assets/style2.css">
+    </head>
+    <body>
+        <header>
+        <img src = "Quran.png"class= "quran">
+        <h1><label for="playerName"></label>Selamat bermain  <input type="text" id="playerName" placeholder=" Masukkan nama pemain" required style="font-family: 'Gill Sans MT'; font-weight: bold;">  !!!</h1>
+        <div class="img-container">
+        <img src = "polibang.png">
+        <img src = "LogoHima.png">
+    </div>
+</header>
+
+        <div class="game-container">
+        <div class="background-image"></div>
+        <div class="text-container">
+        <h1>"QuranVerseMerge"</h1>
+        <p>"Gabungkan yang ilahi, lepaskan ayatmu!"</p>
+        <p>"Dalam permainan QuranVerseMerge, kamu dapat menyatukan yang Ilahi dan mengeluarkan potensi yang luar biasa dalam dirimu. Dengan menggabungkan ayat-ayat Quran yang kuat, kamu dapat menciptakan keajaiban dan memperluas keahlianmu."</p>
+        </div>
+        <center><button onclick="savePlayerName()">START GAME</button></center>
+        <script>function savePlayerName() {
+            var playerNameInput = document.getElementById("playerName");
+            var playerName = playerNameInput.value;
+            localStorage.setItem("playerName", playerName);
+            window.location.href = "surat.html";
+        }</script>      
+        </div>
+
+        <footer>
+        <a href="https://twitter.com/dina_istiyana" target="_blank"><img src="twitter-logo.png" alt="Logo Twitter" class="moving-icon"></a>
+        <a href="https://www.instagram.com/dina_istiyana" target="_blank"><img src="ig-logo.png" alt="Logo IG" class="moving-icon"></a>
+        <a href="https://web.whatsapp.com/dina_istiyana" target="_blank"><img src="wa-logo.png" alt="Logo WA" class="moving-icon"></a>
+        <a class="center-content" href="profil.html"><input type="button" value="Profil"></a>
+        <p class="left-content">&copy;copyright2023 DinaIstiyana</p>
+        </footer>
+
+        <script src="assets/java.js"></script>
+    </body>
+</html>
