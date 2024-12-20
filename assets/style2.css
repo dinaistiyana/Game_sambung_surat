@@ -186,7 +186,7 @@ button{
 /*   animation: buttonAnimation 2s ease-in-out infinite; */
 }
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -196,7 +196,7 @@ button{
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 header {
   display: flex;
