@@ -63,7 +63,7 @@ input[type="button1"]{
   animation: buttonAnimation 2s ease-in-out infinite alternate;
 }
 
-@keyframes buttonAnimation {
+/* @keyframes buttonAnimation {
     0% {
       transform: scale(1);
     }
@@ -73,5 +73,5 @@ input[type="button1"]{
     100% {
       transform: scale(1);
     }
-  }
+  } */
   
